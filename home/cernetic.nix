@@ -18,8 +18,8 @@
 
   programs.git = {
     enable = true;
-    userEmail = "alexktz@gmail.com";
-    userName = "Alex Kretzschmar";
+    userEmail = "miha@filetki.si";
+    userName = "Miha Cernetic";
     delta.enable = true;
   };
 
@@ -56,78 +56,78 @@
   programs.nix-index.enable = true;
   programs.zoxide.enable = true;
 
-  programs.ssh = {
-    enable = true;
-    extraConfig = ''
-    Host *
-      StrictHostKeyChecking no
-    '';
-    matchBlocks = {
-      # wd
-      "m morpheus" = {
-        hostname = "10.42.1.10";
-        user = "alex";
-      };
-      "a anton" = {
-        hostname = "10.42.1.20";
-        user = "root";
-      };
-      "bricktop" = {
-        hostname = "10.42.1.80";
-        user = "pi";
-      };
-      "z zoidberg" = {
-        hostname = "10.42.1.42";
-        user = "root";
-      };
-      "m1" = {
-        hostname = "10.42.1.30";
-        user = "root";
-      };
-      "testnix" = {
-        hostname = "10.42.0.50";
-        user = "alex";
-      };
-      "opn opnwd" = {
-        hostname = "10.42.0.254";
-        user = "alexktz";
-      };
-      "pihole" = {
-        hostname = "10.42.0.253";
-        user = "root";
-      };
-      "caddy" = {
-        hostname = "10.42.0.252";
-        user = "root";
-      };
-      # nr
-      "p pennywise" = {
-        hostname = "192.168.16.10";
-        user = "alex";
-      };
-      # lancs
-      "e elrond" = {
-        hostname = "100.105.174.16";
-        user = "alexktz";
-      };
-      # ktz-cloud
-      "cloud" = {
-        hostname = "100.89.12.127";
-        user = "ironicbadger";
-      };
-      # jb
-      "core" = {
-        hostname = "demo.selfhosted.show";
-        user = "ironicbadger";
-        port = 53142;
-      };
-      "status" = {
-        hostname = "hc.ktz.cloud";
-        user = "ironicbadger";
-        port = 53142;
-      };
-    };
-  };
+  # programs.ssh = {
+  #   enable = true;
+  #   extraConfig = ''
+  #   Host *
+  #     StrictHostKeyChecking no
+  #   '';
+  #   matchBlocks = {
+  #     # wd
+  #     "m morpheus" = {
+  #       hostname = "10.42.1.10";
+  #       user = "alex";
+  #     };
+  #     "a anton" = {
+  #       hostname = "10.42.1.20";
+  #       user = "root";
+  #     };
+  #     "bricktop" = {
+  #       hostname = "10.42.1.80";
+  #       user = "pi";
+  #     };
+  #     "z zoidberg" = {
+  #       hostname = "10.42.1.42";
+  #       user = "root";
+  #     };
+  #     "m1" = {
+  #       hostname = "10.42.1.30";
+  #       user = "root";
+  #     };
+  #     "testnix" = {
+  #       hostname = "10.42.0.50";
+  #       user = "alex";
+  #     };
+  #     "opn opnwd" = {
+  #       hostname = "10.42.0.254";
+  #       user = "alexktz";
+  #     };
+  #     "pihole" = {
+  #       hostname = "10.42.0.253";
+  #       user = "root";
+  #     };
+  #     "caddy" = {
+  #       hostname = "10.42.0.252";
+  #       user = "root";
+  #     };
+  #     # nr
+  #     "p pennywise" = {
+  #       hostname = "192.168.16.10";
+  #       user = "alex";
+  #     };
+  #     # lancs
+  #     "e elrond" = {
+  #       hostname = "100.105.174.16";
+  #       user = "alexktz";
+  #     };
+  #     # ktz-cloud
+  #     "cloud" = {
+  #       hostname = "100.89.12.127";
+  #       user = "ironicbadger";
+  #     };
+  #     # jb
+  #     "core" = {
+  #       hostname = "demo.selfhosted.show";
+  #       user = "ironicbadger";
+  #       port = 53142;
+  #     };
+  #     "status" = {
+  #       hostname = "hc.ktz.cloud";
+  #       user = "ironicbadger";
+  #       port = 53142;
+  #     };
+  #   };
+  # };
 
   # home.packages = with pkgs; [
   #   ## unstable

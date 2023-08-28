@@ -4,7 +4,7 @@ let
 in 
 {
   # Nix configuration ------------------------------------------------------------------------------
-  users.users.alex.home = "/Users/alex";
+  users.users.cernetic.home = "/Users/cernetic";
 
   nix = {
     #package = lib.mkDefault pkgs.unstable.nix;
@@ -60,7 +60,6 @@ in
     enable = true;
     enableCompletion = true;
     promptInit = (builtins.readFile ./../mac-dot-zshrc);
-    #interactiveShellInit = "/Users/alex/go/bin/figurine -f \"Rammstein.flf\" magrathea";
   };
 
   homebrew = {

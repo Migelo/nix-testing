@@ -19,15 +19,15 @@
   #boot.zfs.extraPools = [ "zfstest" ];
   #services.zfs.autoScrub.enable = true;
 
-  time.timeZone = "America/New_York";
+  time.timeZone = "Europe/Berlin";
 
-  users.users.alex = 
+  users.users.cernetic = 
   {
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" ];
-    hashedPassword = "$6$wW/xsljhhG/vssC3$ujh/4jSZp7APUsbI6FAAUtIkaWVl9ElocFV6FKO7vD4ouoXKiebecrfmtd46NNVJBOFO8blNaEvkOLmOW5X3j.";
+    hashedPassword = "$6$w9ONcxtnQEmI.q1W$hkDKsTZV1hJCemQ96rN2C.4Iu5tGf/UcA9ZqyxMKs05MtNpUVjPnITT6tfijJ0R1lGQkxhffcsV9y7T4vbWCx.";
   };
-  users.users.alex.openssh.authorizedKeys.keyFiles = [
+  users.users.cernetic.openssh.authorizedKeys.keyFiles = [
     ./../../authorized_keys
   ];
   users.users.root.openssh.authorizedKeys.keyFiles = [
