@@ -80,7 +80,7 @@
     in
     {
       darwinConfigurations = {
-        laptop = darwinSystem "aarch64-darwin" "laptop" "cernetic";
+        MB-144 = darwinSystem "aarch64-darwin" "MB-144" "cernetic";
       };
 
       nixosConfigurations = {
