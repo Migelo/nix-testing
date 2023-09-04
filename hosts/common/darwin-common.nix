@@ -56,11 +56,10 @@ in
   # Add ability to used TouchID for sudo authentication
   security.pam.enableSudoTouchIdAuth = true;
 
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    promptInit = (builtins.readFile ./../mac-dot-zshrc);
-  };
+programs.zsh = {
+  enable = true;
+  
+};
 
   homebrew = {
     enable = true;
@@ -68,82 +67,170 @@ in
     # updates homebrew packages on activation,
     # can make darwin-rebuild much slower (otherwise i'd forget to do it ever though)
     taps = [
-      #
+      "acrogenesis/macchanger"
+      "homebrew/autoupdate"
+      "homebrew/bundle"
+      "homebrew/cask-fonts"
+      "homebrew/services"
+      "jesseduffield/lazygit"
+      "kaplanelad/tap"
+      "mistertea/et"
+      "oncletom/cpdf"
+      "robotsandpencils/made"
+      "theseal/ssh-askpass"
     ];
     brews = [
-      # home.nix
-      # home.packages
+      "acrogenesis/macchanger/macchanger"
+      "atool"
+      "automake"
+      "autossh"
+      "borgbackup"
+      "clang-format"
+      "cmake"
+      "cmake-docs"
+      "cmocka"
+      # "dua-cli"
+      # "dust"
+      "diffoscope"
+      "elinks"
+      "exiftool"
+      # "fd"
+      # "ffmpeg@4"
+      # "ffmpegthumbnailer"
+      # "git-lfs"
+      "glow"
+      # "gnuplot"
+      # "gobject-introspection"
+      # "gotop"
+      # "grex"
+      "gsl"
+      "hdf5"
+      # "helix"
+      "highlight"
+      # "httpie"
+      # "hyperfine"
+      # "imagemagick"
+      "jesseduffield/lazygit/lazygit"
+      "jj"
+      # "just"
+      "kaplanelad/tap/shellfirm"
+      "krb5"
+      "libcaca"
+      "libyaml"
+      # "lua@5.3"
+      "luajit-openresty"
+      # "lynx"
+      "mas"
+      "media-info"
+      # "mistertea/et/et"
+      "moreutils"
+      "mosquitto"
+      # "mpv"
+      "nativefier"
+      "navi"
+      # "ncdu"
+      # "neovim"
+      # "nmap"
+      # "node@14"
+      "nss"
+      "oncletom/cpdf/cpdf"
+      "open-mpi"
+      "pyenv-virtualenv"
+      "qt@5"
+      "ranger"
+      # "ripgrep"
+      # "rnr"
+      # "rsync"
+      "rustup-init"
+      # "scrcpy"
+      "sd"
+      "syncthing"
+      "szip"
+      "tailscale"
+      "taskd"
+      "tasksh"
+      "telnet"
+      "theseal/ssh-askpass/ssh-askpass"
+      # "timg"
+      "tmux"
+      "tree"
+      "w3m"
+      "wakeonlan"
+      "watch"
+      "watchman"
+      # "wget"
+      # "wireguard-tools"
+      "zola"
     ];
     casks = [
-      #"alfred" # you are on alfred4 not 5
-      "audacity"
+      "adobe-acrobat-reader"
+      "alt-tab"
+      "android-platform-tools"
+      "anydesk"
+      "appcleaner"
+      "atom"
+      "background-music"
       "balenaetcher"
-      "bartender"
-      "canon-eos-utility"
+      "barrier"
+      "chromium"
+      "coconutbattery"
+      "cyberduck"
       "discord"
-      "displaylink"
       "docker"
-      "element"
-      "firefox"
-      "google-chrome"
-      "istat-menus"
-      "iterm2"
-      #"lingon-x"
-      "little-snitch"
-      "logitech-options"
-      "macwhisper"
-      "monitorcontrol"
-      "mqtt-explorer"
-      "nextcloud"
-      "notion"
-      "obs"
-      "obsidian"
-      "omnidisksweeper"
-      "openttd"
-      "plexamp"
-      "prusaslicer"
-      "rectangle"
-      "signal"
-      "slack"
-      "spotify"
-      "steam"
-      "thunderbird"
-      "viscosity"
-      "visual-studio-code"
-      "vlc"
-      "wireshark"
-      "yubico-yubikey-manager"
-
-      # rogue amoeba
-      "audio-hijack"
-      "farrago"
+      "dozer"
+      "endless-sky"
+      "ferdium"
+      "gimp"
+      "google-earth-pro"
+      "handbrake"
+      "hdfview"
+      "hiddenbar"
+      "inkscape"
+      "julia"
+      "keka"
+      "kitty"
+      "libreoffice"
+      "llamachat"
       "loopback"
-      "soundsource"
-    ];
+      "losslesscut"
+      "macfuse"
+      "meld"
+      "microsoft-teams"
+      "namechanger"
+      "nextcloud"
+      "nordvpn"
+      "obs"
+      "openrct2"
+      "owncloud"
+      "paraview"
+      "pinta"
+      "pycharm-ce"
+      "rar"
+      "raspberry-pi-imager"
+      "rustdesk"
+      "scroll-reverser"
+      # "skype"
+      "syncthing"
+      "teamviewer"
+      "textmate"
+      "transmission"
+      "transmission-remote-gui"
+      "tunnelblick"
+      "unnaturalscrollwheels"
+      "vlc"
+      "vnc-viewer"
+      "vorta"
+      "xquartz"
+      "zettlr"
+      "zotero"    ];
     masApps = {
       "Amphetamine" = 937984704;
-      "Bitwarden" = 1352778147;
-      "Creator's Best Friend" = 1524172135;
-      "Disk Speed Test" = 425264550;
-      "iA Writer" = 775737590;
-      "Microsoft Remote Desktop" = 1295203466;
-      "Reeder" = 1529448980;
-      "Resize Master" = 1025306797;
-      # "Steam Link" = 123;
-      "Tailscale" = 1475387142;
-      "Telegram" = 747648890;
-      "The Unarchiver" = 425424353;
-      "Todoist" = 585829637;
-      "UTM" = 1538878817;
-      "Wireguard" = 1451685025;
-
-      # these apps with uk apple id
-      #"Final Cut Pro" = 424389933;
-      #"Logic Pro" = 634148309;
-      #"MainStage" = 634159523; 
-      #"Garageband" = 682658836;
-      #"ShutterCount" = 720123827;
-      #"Teleprompter" = 1533078079;
+      "Ghostery – Privacy Ad Blocker"  = 1436953057;
+      "Microsoft Remote Desktop"       = 1295203466;
+      "1Password for Safari"           = 1569813296;
+      "DuckDuckGo Privacy for Safari" = 1482920575;
+      "WireGuard"                      = 1451685025;
+      "Telegram"                       = 747648890;
 
       "Keynote" = 409183694;
       "Numbers" = 409203825;
@@ -175,10 +262,10 @@ in
   };
   system.defaults.CustomUserPreferences = {
       "com.apple.finder" = {
-        ShowExternalHardDrivesOnDesktop = true;
+        ShowExternalHardDrivesOnDesktop = false;
         ShowHardDrivesOnDesktop = false;
         ShowMountedServersOnDesktop = false;
-        ShowRemovableMediaOnDesktop = true;
+        ShowRemovableMediaOnDesktop = false;
         _FXSortFoldersFirst = true;
         # When performing a search, search the current folder by default
         FXDefaultSearchScope = "SCcf";

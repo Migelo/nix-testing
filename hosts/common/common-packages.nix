@@ -6,29 +6,38 @@ with pkgs; [
 
   ## stable
   ansible
-  asciinema
-  bitwarden-cli
+  # asciinema
+  atuin
+  bat
+  btop
   coreutils
   # direnv # programs.direnv
   #docker
   drill
   du-dust
+  difftastic
   dua
   duf
+  eternal-terminal
+  # exa
   esptool
   ffmpeg
-  fira-code
-  fira-mono
+  # fira-code
+  # fira-mono
   fd
   #fzf # programs.fzf
-  git # programs.git
+  # git # programs.git
   gh
   go
   gnused
+  gnuplot
   #htop # programs.htop
-  hub
-  hugo
-  ipmitool
+  # hub
+  # hugo
+  hyperfine
+  helix
+  # ipmitool
+  imagemagick
   jetbrains-mono # font
   just
   jq
@@ -36,16 +45,23 @@ with pkgs; [
   mosh
   neofetch
   nmap
+  ncdu
+  neovim
+  pipenv
   ripgrep
-  skopeo
+  rnr
+  rsync
+  # skopeo
   smartmontools
-  terraform
+  # terraform
   tree
+  timg
   unzip
   watch
   wget
   wireguard-tools
   vim
+  zoxide
 
   # requires nixpkgs.config.allowUnfree = true;
   vscode-extensions.ms-vscode-remote.remote-ssh
