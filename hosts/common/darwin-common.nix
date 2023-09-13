@@ -294,6 +294,7 @@ programs.zsh = {
         tilesize = 36;
         minimize-to-application = true;
         mineffect = "scale";
+        no-bouncing = true;
       };
       "com.apple.ActivityMonitor" = {
         OpenMainWindow = true;
