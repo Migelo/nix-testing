@@ -228,10 +228,11 @@ programs.zsh = {
       "Ghostery – Privacy Ad Blocker"  = 1436953057;
       "Microsoft Remote Desktop"       = 1295203466;
       "1Password for Safari"           = 1569813296;
-      "DuckDuckGo Privacy for Safari" = 1482920575;
+      "DuckDuckGo Privacy for Safari"  = 1482920575;
       "WireGuard"                      = 1451685025;
       "Telegram"                       = 747648890;
-
+      "Disk Speed Test"                = 425264550;
+      
       "Keynote" = 409183694;
       "Numbers" = 409203825;
       "Pages" = 409201541;
