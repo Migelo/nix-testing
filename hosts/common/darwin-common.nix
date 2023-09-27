@@ -154,6 +154,7 @@ programs.zsh = {
       # "timg"
       "tmux"
       "tree"
+      "yazi"
       "w3m"
       "wakeonlan"
       "watch"

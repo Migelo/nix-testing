@@ -11,6 +11,7 @@ with pkgs; [
   bat
   btop
   coreutils
+  croc
   # direnv # programs.direnv
   #docker
   drill
@@ -41,6 +42,7 @@ with pkgs; [
   jetbrains-mono # font
   just
   jq
+  # lima
   mc
   mosh
   neofetch
@@ -53,7 +55,8 @@ with pkgs; [
   rsync
   # skopeo
   smartmontools
-  # terraform
+  terraform
+  # yazi
   tree
   timg
   unzip
@@ -62,6 +65,7 @@ with pkgs; [
   wireguard-tools
   vim
   zoxide
+  zsync
 
   # requires nixpkgs.config.allowUnfree = true;
   vscode-extensions.ms-vscode-remote.remote-ssh

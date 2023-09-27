@@ -21,3 +21,5 @@
 # fi
 # End Nix
 # source <(atuin init zsh)
+
+alias ubuntu=lima
