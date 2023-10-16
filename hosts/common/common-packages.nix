@@ -20,7 +20,7 @@ with pkgs; [
   dua
   duf
   eternal-terminal
-  # exa
+  exa
   esptool
   ffmpeg
   # fira-code
@@ -49,6 +49,8 @@ with pkgs; [
   nmap
   ncdu
   neovim
+  openai-whisper
+  # pyenv
   pipenv
   ripgrep
   rnr
