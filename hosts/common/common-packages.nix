@@ -13,8 +13,8 @@ with pkgs; [
   coreutils
   croc
   # direnv # programs.direnv
-  #docker
-  drill
+  # docker
+  # drill
   du-dust
   difftastic
   dua
@@ -26,8 +26,8 @@ with pkgs; [
   # fira-code
   # fira-mono
   fd
-  #fzf # programs.fzf
-  # git # programs.git
+  fzf # programs.fzf
+  git # programs.git
   gh
   go
   gnused
@@ -50,7 +50,6 @@ with pkgs; [
   ncdu
   neovim
   openai-whisper
-  # pyenv
   pipenv
   ripgrep
   rnr
