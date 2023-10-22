@@ -12,6 +12,9 @@ with pkgs; [
   btop
   coreutils
   croc
+  clang-tools
+  cmake
+  # cmake-docs
   # direnv # programs.direnv
   # docker
   # drill
@@ -32,6 +35,7 @@ with pkgs; [
   go
   gnused
   gnuplot
+  glow
   #htop # programs.htop
   # hub
   # hugo
