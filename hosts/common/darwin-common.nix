@@ -187,6 +187,7 @@ programs.zsh = {
       "handbrake"
       "hdfview"
       "hiddenbar"
+      "hyper"
       "inkscape"
       "julia"
       "keka"

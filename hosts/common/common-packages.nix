@@ -39,6 +39,7 @@ with pkgs; [
   htop # programs.htop
   # hub
   # hugo
+  # hyper
   hyperfine
   helix
   # ipmitool
