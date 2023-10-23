@@ -36,7 +36,7 @@ with pkgs; [
   gnused
   gnuplot
   glow
-  #htop # programs.htop
+  htop # programs.htop
   # hub
   # hugo
   hyperfine
