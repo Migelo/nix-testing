@@ -6,6 +6,7 @@ with pkgs; [
 
   ## stable
   ansible
+  automake
   # asciinema
   atuin
   bat
@@ -20,6 +21,7 @@ with pkgs; [
   # drill
   du-dust
   difftastic
+  diffoscopeMinimal
   dua
   duf
   eternal-terminal
