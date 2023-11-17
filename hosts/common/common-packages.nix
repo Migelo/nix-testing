@@ -2,7 +2,7 @@
 
 with pkgs; [
   ## unstable
-  unstablePkgs.yt-dlp
+  yt-dlp
 
   ## stable
   ansible
@@ -49,9 +49,13 @@ with pkgs; [
   jetbrains-mono # font
   just
   jq
+  krb5
   # lima
+  mas
   mc
+  # media-info
   mosh
+  moreutils
   neofetch
   nmap
   ncdu
@@ -61,6 +65,8 @@ with pkgs; [
   ripgrep
   rnr
   rsync
+  ruby
+  ruff
   # skopeo
   smartmontools
   terraform
