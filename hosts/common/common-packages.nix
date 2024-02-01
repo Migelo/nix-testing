@@ -10,6 +10,7 @@ with pkgs; [
   # asciinema
   atuin
   bat
+  bottom
   btop
   coreutils
   croc
@@ -25,9 +26,11 @@ with pkgs; [
   dua
   duf
   eternal-terminal
-  exa
+  # exa
+  # github:eza-community/eza
   esptool
   ffmpeg
+  ffsend
   # fira-code
   # fira-mono
   fd
@@ -60,6 +63,7 @@ with pkgs; [
   nmap
   ncdu
   neovim
+  nixpkgs-fmt
   openai-whisper
   pipenv
   ripgrep
@@ -68,6 +72,7 @@ with pkgs; [
   ruby
   ruff
   # skopeo
+  speedtest-cli
   smartmontools
   terraform
   # yazi
@@ -80,6 +85,7 @@ with pkgs; [
   vim
   zoxide
   zsync
+
 
   # requires nixpkgs.config.allowUnfree = true;
   vscode-extensions.ms-vscode-remote.remote-ssh
