@@ -1,7 +1,7 @@
 { pkgs, lib, inputs, ... }:
-let 
+let
   inherit (inputs) nixpkgs nixpkgs-unstable;
-in 
+in
 {
   # Nix configuration ------------------------------------------------------------------------------
   users.users.cernetic.home = "/Users/cernetic";
@@ -46,7 +46,7 @@ in
         system = "x86_64-darwin";
         config.allowUnfree = true;
       };
-    }) 
+    })
   ];
 
   # Keyboard
@@ -56,10 +56,10 @@ in
   # Add ability to used TouchID for sudo authentication
   security.pam.enableSudoTouchIdAuth = true;
 
-programs.zsh = {
-  enable = true;
-  
-};
+  programs.zsh = {
+    enable = true;
+
+  };
 
   homebrew = {
     enable = true;
@@ -226,17 +226,18 @@ programs.zsh = {
       "vorta"
       "xquartz"
       "zettlr"
-      "zotero"    ];
+      "zotero"
+    ];
     masApps = {
       "Amphetamine" = 937984704;
-      "Ghostery – Privacy Ad Blocker"  = 1436953057;
-      "Microsoft Remote Desktop"       = 1295203466;
-      "1Password for Safari"           = 1569813296;
-      "DuckDuckGo Privacy for Safari"  = 1482920575;
-      "WireGuard"                      = 1451685025;
-      "Telegram"                       = 747648890;
-      "Disk Speed Test"                = 425264550;
-      
+      "Ghostery – Privacy Ad Blocker" = 1436953057;
+      "Microsoft Remote Desktop" = 1295203466;
+      "1Password for Safari" = 1569813296;
+      "DuckDuckGo Privacy for Safari" = 1482920575;
+      "WireGuard" = 1451685025;
+      "Telegram" = 747648890;
+      "Disk Speed Test" = 425264550;
+
       "Keynote" = 409183694;
       "Numbers" = 409203825;
       "Pages" = 409201541;
@@ -256,8 +257,8 @@ programs.zsh = {
     NSGlobalDomain.NSNavPanelExpandedStateForSaveMode2 = true;
     NSGlobalDomain.PMPrintingExpandedStateForPrint = true;
     NSGlobalDomain.PMPrintingExpandedStateForPrint2 = true;
-    NSGlobalDomain.NSDocumentSaveNewDocumentsToCloud = false;
-    NSGlobalDomain.ApplePressAndHoldEnabled = true;
+    # NSGlobalDomain.NSDocumentSaveNewDocumentsToaCloud = false;
+    NSGlobalDomain.ApplePressAndHoldEnabled = false;
     NSGlobalDomain.InitialKeyRepeat = 25;
     NSGlobalDomain.KeyRepeat = 4;
     NSGlobalDomain."com.apple.mouse.tapBehavior" = 1;
@@ -266,74 +267,74 @@ programs.zsh = {
 
   };
   system.defaults.CustomUserPreferences = {
-      "com.apple.finder" = {
-        ShowExternalHardDrivesOnDesktop = false;
-        ShowHardDrivesOnDesktop = false;
-        ShowMountedServersOnDesktop = false;
-        ShowRemovableMediaOnDesktop = false;
-        _FXSortFoldersFirst = true;
-        # When performing a search, search the current folder by default
-        FXDefaultSearchScope = "SCcf";
-        DisableAllAnimations = true;
-        NewWindowTarget = "PfDe";
-        NewWindowTargetPath = "file://$\{HOME\}/Desktop/";
-        AppleShowAllExtensions = true;
-        FXEnableExtensionChangeWarning = false;
-        ShowStatusBar = true;
-        ShowPathbar = true;
-        WarnOnEmptyTrash = false;
-      };
-      "com.apple.desktopservices" = {
-        # Avoid creating .DS_Store files on network or USB volumes
-        DSDontWriteNetworkStores = true;
-        DSDontWriteUSBStores = true;
-      };
-      "com.apple.dock" = {
-        autohide = false;
-        launchanim = false;
-        static-only = false;
-        show-recents = false;
-        show-process-indicators = true;
-        orientation = "left";
-        tilesize = 36;
-        minimize-to-application = true;
-        mineffect = "scale";
-        no-bouncing = true;
-      };
-      "com.apple.ActivityMonitor" = {
-        OpenMainWindow = true;
-        IconType = 5;
-        SortColumn = "CPUUsage";
-        SortDirection = 0;
-      };
-      "com.apple.Safari" = {
-        # Privacy: don’t send search queries to Apple
-        UniversalSearchEnabled = false;
-        SuppressSearchSuggestions = true;
-      };
-      "com.apple.AdLib" = {
-        allowApplePersonalizedAdvertising = false;
-      };
-      "com.apple.SoftwareUpdate" = {
-        AutomaticCheckEnabled = true;
-        # Check for software updates daily, not just once per week
-        ScheduleFrequency = 1;
-        # Download newly available updates in background
-        AutomaticDownload = 1;
-        # Install System data files & security updates
-        CriticalUpdateInstall = 1;
-      };
-      "com.apple.TimeMachine".DoNotOfferNewDisksForBackup = true;
-      # Prevent Photos from opening automatically when devices are plugged in
-      "com.apple.ImageCapture".disableHotPlug = true;
-      # Turn on app auto-update
-      "com.apple.commerce".AutoUpdate = true;
-      "com.googlecode.iterm2".PromptOnQuit = false;
-      "com.google.Chrome" = {
-        #AppleEnableSwipeNavigateWithScrolls = false;
-        DisablePrintPreview = true;
-        PMPrintingExpandedStateForPrint2 = true;
-      };
+    "com.apple.finder" = {
+      ShowExternalHardDrivesOnDesktop = false;
+      ShowHardDrivesOnDesktop = false;
+      ShowMountedServersOnDesktop = false;
+      ShowRemovableMediaOnDesktop = false;
+      _FXSortFoldersFirst = true;
+      # When performing a search, search the current folder by default
+      FXDefaultSearchScope = "SCcf";
+      DisableAllAnimations = true;
+      NewWindowTarget = "PfDe";
+      NewWindowTargetPath = "file://$\{HOME\}/Desktop/";
+      AppleShowAllExtensions = true;
+      FXEnableExtensionChangeWarning = false;
+      ShowStatusBar = true;
+      ShowPathbar = true;
+      WarnOnEmptyTrash = false;
+    };
+    "com.apple.desktopservices" = {
+      # Avoid creating .DS_Store files on network or USB volumes
+      DSDontWriteNetworkStores = true;
+      DSDontWriteUSBStores = true;
+    };
+    "com.apple.dock" = {
+      autohide = false;
+      launchanim = false;
+      static-only = false;
+      show-recents = false;
+      show-process-indicators = true;
+      orientation = "left";
+      tilesize = 36;
+      minimize-to-application = true;
+      mineffect = "scale";
+      no-bouncing = true;
+    };
+    "com.apple.ActivityMonitor" = {
+      OpenMainWindow = true;
+      IconType = 5;
+      SortColumn = "CPUUsage";
+      SortDirection = 0;
+    };
+    "com.apple.Safari" = {
+      # Privacy: don’t send search queries to Apple
+      UniversalSearchEnabled = false;
+      SuppressSearchSuggestions = true;
+    };
+    "com.apple.AdLib" = {
+      allowApplePersonalizedAdvertising = false;
+    };
+    "com.apple.SoftwareUpdate" = {
+      AutomaticCheckEnabled = true;
+      # Check for software updates daily, not just once per week
+      ScheduleFrequency = 1;
+      # Download newly available updates in background
+      AutomaticDownload = 1;
+      # Install System data files & security updates
+      CriticalUpdateInstall = 1;
+    };
+    "com.apple.TimeMachine".DoNotOfferNewDisksForBackup = true;
+    # Prevent Photos from opening automatically when devices are plugged in
+    "com.apple.ImageCapture".disableHotPlug = true;
+    # Turn on app auto-update
+    "com.apple.commerce".AutoUpdate = true;
+    "com.googlecode.iterm2".PromptOnQuit = false;
+    "com.google.Chrome" = {
+      #AppleEnableSwipeNavigateWithScrolls = false;
+      DisablePrintPreview = true;
+      PMPrintingExpandedStateForPrint2 = true;
+    };
   };
 
 }

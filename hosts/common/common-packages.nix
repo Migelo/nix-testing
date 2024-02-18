@@ -78,6 +78,7 @@ with pkgs; [
   # yazi
   tree
   timg
+  qrencode
   unzip
   watch
   wget
