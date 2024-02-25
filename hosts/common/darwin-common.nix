@@ -113,6 +113,7 @@ in
       "jesseduffield/lazygit/lazygit"
       "jj"
       # "just"
+      "jsonlint"
       "kaplanelad/tap/shellfirm"
       # "krb5"
       "libcaca"
@@ -225,6 +226,7 @@ in
       "vnc-viewer"
       "vorta"
       "xquartz"
+      "warp"
       "zettlr"
       "zotero"
     ];
